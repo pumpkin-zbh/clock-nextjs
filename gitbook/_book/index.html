@@ -57,6 +57,8 @@
     <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
 
     
+    <link rel="next" href="use-of-the-development-kit/how-to-download-the-development-kit.html" />
+    
     
 
     </head>
@@ -83,6 +85,8 @@
 
     
         
+        <li class="header">Getting started with Vobot Clock Tiny</li>
+        
         
     
         <li class="chapter active" data-level="1.1" data-path="./">
@@ -91,6 +95,85 @@
             
                     
                     Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Development kit</li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" data-path="use-of-the-development-kit/how-to-download-the-development-kit.html">
+            
+                <a href="use-of-the-development-kit/how-to-download-the-development-kit.html">
+            
+                    
+                    How to download the development kit
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Plugin</li>
+        
+        
+    
+        <li class="chapter " data-level="3.1" data-path="use-of-the-development-kit/what-is-a-plugin.html">
+            
+                <a href="use-of-the-development-kit/what-is-a-plugin.html">
+            
+                    
+                    What is a plugin
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2" data-path="use-of-the-development-kit/how-to-upload-files-to-the-vobot-clock-tiny-through-the-development-kit.html">
+            
+                <a href="use-of-the-development-kit/how-to-upload-files-to-the-vobot-clock-tiny-through-the-development-kit.html">
+            
+                    
+                    How to upload a .py file
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3" data-path="use-of-the-development-kit/plugin-template-example/plugin-template.html">
+            
+                <a href="use-of-the-development-kit/plugin-template-example/plugin-template.html">
+            
+                    
+                    Template of Plugin
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.4" data-path="use-of-the-development-kit/plugin-template-example/hello-word.html">
+            
+                <a href="use-of-the-development-kit/plugin-template-example/hello-word.html">
+            
+                    
+                    Hello World
             
                 </a>
             
@@ -144,6 +227,88 @@
                                 <section class="normal markdown-section">
                                 
                                 <h1 id="introduction">Introduction</h1>
+<ul>
+<li>Vobot Clock Tiny is a sleek tabletop decoration that relieves stress while decorating desks and study rooms.</li>
+<li>It has the following functions:<ul>
+<li>As as a weather station: displays temperature, humidity and weather conditions in your area</li>
+<li>As a clock: it can display time, hour/minute/second, month/day/year and week.</li>
+<li>As a cryptocurrency price profile: shows current prices for Bitcoin, Ethereum, AdHive, Polkadot</li>
+<li>As a developer board: users with development capabilities can compile firmware by themselves and download it to the device</li>
+<li>More features will be provided in the future</li>
+</ul>
+</li>
+</ul>
+<h2 id="specification">Specification</h2>
+<h4 id="product-packaging">Product packaging</h4>
+<figure><img src="images/&#x5C0F;&#x7535;&#x89C6;&#x4EA7;&#x54C1;.png" alt=""><figcaption></figcaption></figure>
+
+<h4 id="product-specification">Product specification</h4>
+<figure><img src="images/&#x5C0F;&#x7535;&#x89C6;&#x89C4;&#x683C;.png" alt=""><figcaption><p><strong>Vobot Clock Tiny</strong> resource description</p></figcaption></figure>
+
+<ul>
+<li>Main controller: ESP32-C3, support WiFi/BLE</li>
+<li>Flash: 4Mbytes</li>
+<li>1 x 1.54 inch display (resolution 240 x 240)</li>
+<li>1 x LED (blue light)</li>
+<li>1 x button</li>
+<li>1 x Sensor interface (XH-1.25mm-3P)</li>
+<li>1 x Type-C (download/debug/power supply)</li>
+</ul>
+<h2 id="basic-setup">Basic Setup</h2>
+<h3 id="setup">Setup</h3>
+<ol>
+<li>Connect your Phone/Tablet/Laptop/PC to the wireless hotspot (AP) displayed on the screen.</li>
+</ol>
+<figure><img src="images/&#x8BBE;&#x7F6E;-1.jpg" alt=""><figcaption></figcaption></figure>
+
+<ol>
+<li>Visit the IP address shown on the screen with your Phone/Tablet/Laptop/PC IP Address: <a href="http://10.9.8.7/" target="_blank">http://10.9.8.7/</a></li>
+</ol>
+<figure><img src="images/&#x8BBE;&#x7F6E;-2.jpg" alt=""><figcaption></figcaption></figure>
+
+<ol>
+<li>Select the Wi-Fi SSID you prefer to connect the device to. (Note: Support 2.4 GHz Hotpot Only)</li>
+<li>Fill the Wi-Fi password of the Wi-Fi SSID that you selected, and other address information needed. (Note: Case-sensitive)</li>
+<li>Click &quot;Connect to WiFi&quot;, and then the device will verify if it can connect to the assigned Wi-Fi, and check if the City/State/Region is Valid. Once the geolocation and time zone information was fetched successfully, the setup is completed.</li>
+</ol>
+<figure><img src="images/&#x8BBE;&#x7F6E;-3.jpg" alt=""><figcaption></figcaption></figure>
+
+<h3 id="button-operation">Button Operation</h3>
+<h4 id="switching-ui-pages">Switching UI Pages</h4>
+<ul>
+<li>During the normal operation, by short pressing the button, the UI will switch to the next page (plugin). Sometimes it will prompt to hold the button for 0.5 second to confirm an operation.</li>
+</ul>
+<figure><img src="images/&#x8BBE;&#x7F6E;-4.jpg" alt=""><figcaption></figcaption></figure>
+
+<h4 id="restore-to-factory-default">Restore to Factory Default</h4>
+<ul>
+<li>Press and hold the button for about 5 seconds, until the screen shows &quot;Restoring to factory default&quot;, and then release the button.</li>
+</ul>
+<figure><img src="images/&#x8BBE;&#x7F6E;-5.jpg" alt=""><figcaption></figcaption></figure>
+
+<h4 id="regular-firmware-update">Regular Firmware Update</h4>
+<ul>
+<li>On the firmware update page, if the new version is available, you may press and hold the button for about 1 second to enter the network update mode.</li>
+<li>The firmware update needs to connect to a Wi-Fi hotspot, please wait until the screen shows that the update is completed, and the device will automatically reboot.</li>
+<li>If the upgrade process is interrupted or gets stuck, you need to re-plug the power supply to try again.</li>
+</ul>
+<h4 id="rescue-mode">Rescue Mode</h4>
+<ul>
+<li>In case the system completely crashes (rarely happens), you may use the rescue mode to completely recover to the latest firmware version, here is how:<ul>
+<li>Create a temporary WiFi hotspot: factory/12345678&amp;</li>
+<li>Unplug the power cord, and right after plug back, immediately press the button and hold it for more than 5 seconds. At this time, it will erase the configuration and existing firmware. Then it connects to the Wi-Fi hotspot and downloads the latest version of firmware.</li>
+</ul>
+</li>
+</ul>
+<figure><img src="images/&#x8BBE;&#x7F6E;-6.jpg" alt=""><figcaption></figcaption></figure>
+
+<h4 id="advanced">Advanced</h4>
+<ul>
+<li>This device is made of ESP32-C3 chipset. You can DIY your firmware totally by yourself and write it into the device over USB port (USB Serial CDC UART).</li>
+<li>To flash your firmware, press and hold the button first, then plug in the power supply. Then release the button. At this point, the device enters the Download mode.</li>
+<li>However, all firmware and data will get lost in this case, and the rescue mode and OTA feature will no longer be available.</li>
+<li>We recommend to use Thonny (Python IDE) for beginners to manage the configuration file and write your plugins.</li>
+</ul>
 
                                 
                                 </section>
@@ -172,6 +337,10 @@
             
                 
                 
+                <a href="use-of-the-development-kit/how-to-download-the-development-kit.html" class="navigation navigation-next navigation-unique" aria-label="Next page: How to download the development kit">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
             
         
     </div>
@@ -179,7 +348,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Introduction","level":"1.1","depth":1,"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"README.md","mtime":"2023-05-11T01:55:47.276Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2023-05-11T01:55:57.875Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Introduction","level":"1.1","depth":1,"next":{"title":"How to download the development kit","level":"2.1","depth":1,"path":"use-of-the-development-kit/how-to-download-the-development-kit.md","ref":"use-of-the-development-kit/how-to-download-the-development-kit.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"README.md","mtime":"2023-05-24T08:08:09.727Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2023-05-25T05:59:56.142Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>

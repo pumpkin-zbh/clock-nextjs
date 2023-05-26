@@ -1,0 +1,5 @@
+# Other
+
+* MicroPython puts more emphasis on application-oriented learning. The powerful underlying library functions allow us to directly care about the realization of functions. That is to say, as long as we understand and be proficient in the usage of related functions, we can play MicroPython well. It allows us to run the hardware directly without caring about the hardware and underlying principles (of course, interested and capable friends can study in depth).
+* [Application Notes](application-note/README.md) is for some simple experimental learning explanations, which can let us feel the power of MicroPython for embedded development faster and more directly.
+* [Frequently Asked Questions](common-problem.md) is for some error messages and troubleshooting methods encountered during operation.
